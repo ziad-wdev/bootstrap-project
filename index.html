@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,7 +13,8 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous" />
+      crossorigin="anonymous"
+    />
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/all.css" />
@@ -26,23 +27,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="fixed-top">
-      <nav class="navbar navbar-expand-lg bg-light px-4 gap-lg-3">
-        <img
-          src="images/logo.png"
-          alt="Logo"
-          width="40"
-          height="40"
-          class="d-inline-block align-middle" />
-        <a class="navbar-brand m-0 pe-3 border-end border-2 border-dark" href="#">FreshFlavor</a>
+      <nav class="navbar navbar-expand-lg bg-light gap-lg-3 px-4">
+        <img src="images/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-middle" />
+        <a class="navbar-brand border-end border-dark m-0 border-2 pe-3" href="#">FreshFlavor</a>
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-          <ul class="navbar-nav gap-3 mt-3 mt-lg-0">
+        <div class="navbar-collapse justify-content-between collapse" id="navbarNav">
+          <ul class="navbar-nav mt-lg-0 mt-3 gap-3">
             <li class="nav-item">
               <a class="nav-link p-0" href="#">Home</a>
             </li>
@@ -51,7 +48,7 @@
             </li>
             <!-- Dropdown Menu -->
             <li class="nav-item dropdown">
-              <a class="nav-link p-0 dropdown-toggle" data-bs-toggle="dropdown" href="#">Menu</a>
+              <a class="nav-link dropdown-toggle p-0" data-bs-toggle="dropdown" href="#">Menu</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Pizza</a></li>
                 <li><a class="dropdown-item" href="#">Burger</a></li>
@@ -68,13 +65,10 @@
             </li>
           </ul>
           <!-- Navbar Form -->
-          <div class="d-flex gap-3 mt-3 mt-lg-0">
+          <div class="d-flex mt-lg-0 mt-3 gap-3">
             <input class="form-control" placeholder="Search" />
             <button class="btn btn-warning">Search</button>
-            <button
-              class="btn btn-outline-warning text-dark"
-              data-bs-toggle="modal"
-              data-bs-target="#loginModal">
+            <button class="btn btn-outline-warning text-dark" data-bs-toggle="modal" data-bs-target="#loginModal">
               Login
             </button>
           </div>
@@ -97,19 +91,11 @@
             <form class="d-flex flex-column gap-2">
               <div>
                 <label for="loginEmail" class="form-label">Email address:</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="loginEmail"
-                  placeholder="Enter Your Email" />
+                <input type="email" class="form-control" id="loginEmail" placeholder="Enter Your Email" />
               </div>
               <div>
                 <label for="loginPassword" class="form-label">Password:</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="loginPassword"
-                  placeholder="Enter Your Password" />
+                <input type="password" class="form-control" id="loginPassword" placeholder="Enter Your Password" />
               </div>
               <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="remember" />
@@ -120,40 +106,34 @@
 
           <!-- Modal footer -->
           <div class="modal-footer border-0">
-            <input
-              type="submit"
-              class="btn btn-warning w-100"
-              data-bs-dismiss="modal"
-              value="Login" />
+            <input type="submit" class="btn btn-warning w-100" data-bs-dismiss="modal" value="Login" />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="position-fixed top-50 end-0 translate-middle-y z-2">
-      <ul class="list-unstyled d-flex flex-column gap-4 m-0 pe-4">
+    <div class="position-fixed translate-middle-y end-0 top-50 z-2">
+      <ul class="list-unstyled d-flex flex-column m-0 gap-4 pe-4">
         <li>
-          <a class="text-light btn btn-warning lh-sm rounded fs-5 p-1" href="#"
+          <a class="text-light btn btn-warning lh-sm fs-5 rounded p-1" href="#"
             ><i class="fa-brands fa-facebook-f"></i
           ></a>
         </li>
         <li>
-          <a class="text-light btn btn-warning lh-sm rounded fs-5 p-1" href="#"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
+          <a class="text-light btn btn-warning lh-sm fs-5 rounded p-1" href="#"><i class="fa-brands fa-twitter"></i></a>
         </li>
         <li>
-          <a class="text-light btn btn-warning lh-sm rounded fs-5 p-1" href="#"
+          <a class="text-light btn btn-warning lh-sm fs-5 rounded p-1" href="#"
             ><i class="fa-brands fa-whatsapp"></i
           ></a>
         </li>
         <li>
-          <a class="text-light btn btn-warning lh-sm rounded fs-5 p-1" href="#"
+          <a class="text-light btn btn-warning lh-sm fs-5 rounded p-1" href="#"
             ><i class="fa-brands fa-instagram"></i
           ></a>
         </li>
         <li>
-          <a class="text-light btn btn-warning lh-sm rounded fs-5 p-1" href="#"
+          <a class="text-light btn btn-warning lh-sm fs-5 rounded p-1" href="#"
             ><i class="fa-brands fa-linkedin-in"></i
           ></a>
         </li>
@@ -161,11 +141,7 @@
     </div>
 
     <main>
-      <div
-        id="mainCarousel"
-        class="carousel slide vh-100"
-        style="height: 100dvh !important"
-        data-bs-ride="carousel">
+      <div id="mainCarousel" class="carousel slide vh-100" style="height: 100dvh !important" data-bs-ride="carousel">
         <!-- Indicators/dots -->
         <div class="carousel-indicators">
           <button data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
@@ -176,12 +152,13 @@
 
         <!-- The slideshow/carousel -->
         <div class="carousel-inner h-100">
-          <div class="carousel-item h-100 active">
-            <img src="images/pizza-carousel.jpg" class="d-block w-100 h-100 object-fit-cover" />
+          <div class="carousel-item active h-100">
+            <img src="images/pizza-carousel.jpg" class="d-block object-fit-cover h-100 w-100" />
             <div class="carousel-caption">
               <div
-                class="container border border-1 border-dark rounded-3 p-3 bg-dark bg-opacity-50"
-                style="max-width: 650px">
+                class="border-dark rounded-3 bg-dark bg-opacity-50 container border border-1 p-3"
+                style="max-width: 650px"
+              >
                 <h3>Artisan Pizza</h3>
                 <p>Experience a slice of heaven with our authentic, wood-fired pizzas. 🍕</p>
                 <button class="btn btn-outline-warning">Order Now</button>
@@ -189,11 +166,12 @@
             </div>
           </div>
           <div class="carousel-item h-100">
-            <img src="images/burger-carousel.jpg" class="d-block w-100 h-100 object-fit-cover" />
+            <img src="images/burger-carousel.jpg" class="d-block object-fit-cover h-100 w-100" />
             <div class="carousel-caption">
               <div
-                class="container border border-1 border-dark rounded-3 p-3 bg-dark bg-opacity-50"
-                style="max-width: 650px">
+                class="border-dark rounded-3 bg-dark bg-opacity-50 container border border-1 p-3"
+                style="max-width: 650px"
+              >
                 <h3>Gourmet Burger</h3>
                 <p>Sink your teeth into our juicy, perfectly grilled gourmet burgers. 🍔</p>
                 <button class="btn btn-outline-warning">Order Now</button>
@@ -201,29 +179,27 @@
             </div>
           </div>
           <div class="carousel-item h-100">
-            <img src="images/salad-carousel.jpg" class="d-block w-100 h-100 object-fit-cover" />
+            <img src="images/salad-carousel.jpg" class="d-block object-fit-cover h-100 w-100" />
             <div class="carousel-caption">
               <div
-                class="container border border-1 border-dark rounded-3 p-3 bg-dark bg-opacity-50"
-                style="max-width: 650px">
+                class="border-dark rounded-3 bg-dark bg-opacity-50 container border border-1 p-3"
+                style="max-width: 650px"
+              >
                 <h3>Fresh & Healthy Salad</h3>
-                <p>
-                  Enjoy a burst of freshness with our vibrant, healthy, and delicious salads. 🥗
-                </p>
+                <p>Enjoy a burst of freshness with our vibrant, healthy, and delicious salads. 🥗</p>
                 <button class="btn btn-outline-warning">Order Now</button>
               </div>
             </div>
           </div>
           <div class="carousel-item h-100">
-            <img src="images/chicken-carousel.jpg" class="d-block w-100 h-100 object-fit-cover" />
+            <img src="images/chicken-carousel.jpg" class="d-block object-fit-cover h-100 w-100" />
             <div class="carousel-caption">
               <div
-                class="container border border-1 border-dark rounded-3 p-3 bg-dark bg-opacity-50"
-                style="max-width: 650px">
+                class="border-dark rounded-3 bg-dark bg-opacity-50 container border border-1 p-3"
+                style="max-width: 650px"
+              >
                 <h3>Crispy Chicken Delights</h3>
-                <p>
-                  Savor our perfectly seasoned crispy chicken, healthy and bursting with flavor. 🍗
-                </p>
+                <p>Savor our perfectly seasoned crispy chicken, healthy and bursting with flavor. 🍗</p>
                 <button class="btn btn-outline-warning">Order Now</button>
               </div>
             </div>
@@ -243,10 +219,9 @@
     <section class="p-3">
       <h3>Welcome to FreshFlavor</h3>
       <p>
-        Welcome to FreshFlavor – where culinary passion meets fresh ingredients. We believe in
-        crafting unforgettable meals, delivered right to your doorstep. Explore our diverse menu,
-        from classic comfort foods to innovative dishes, all prepared with the highest quality and
-        care. Taste the FreshFlavor difference today!
+        Welcome to FreshFlavor – where culinary passion meets fresh ingredients. We believe in crafting unforgettable
+        meals, delivered right to your doorstep. Explore our diverse menu, from classic comfort foods to innovative
+        dishes, all prepared with the highest quality and care. Taste the FreshFlavor difference today!
       </p>
       <button class="btn btn-warning">Learn More</button>
     </section>
@@ -254,49 +229,50 @@
     <hr class="m-0 mb-3" />
 
     <section>
-      <h2 class="text-center bg-dark text-light p-4 m-0 fst-italic">Our Signature Menu Items</h2>
+      <h2 class="bg-dark text-light fst-italic m-0 p-4 text-center">Our Signature Menu Items</h2>
 
       <div id="accordion" class="py-3">
         <button
-          class="btn btn-light text-start rounded-0 w-100 p-3 border-top border-bottom border-1"
+          class="btn btn-light rounded-0 border-top border-bottom w-100 border-1 p-3 text-start"
           data-bs-toggle="collapse"
-          data-bs-target="#collapseOne">
+          data-bs-target="#collapseOne"
+        >
           Crispy Golden Chicken
         </button>
         <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
-          <div class="p-3 m-0">
-            Our signature crispy chicken featuring premium free-range chicken breast, hand-breaded
-            with a secret blend of herbs and spices. Golden-fried to perfection for maximum crunch
-            and flavor. Served with artisanal fries, homemade coleslaw, and your choice of signature
-            sauces.
+          <div class="m-0 p-3">
+            Our signature crispy chicken featuring premium free-range chicken breast, hand-breaded with a secret blend
+            of herbs and spices. Golden-fried to perfection for maximum crunch and flavor. Served with artisanal fries,
+            homemade coleslaw, and your choice of signature sauces.
           </div>
         </div>
         <button
-          class="btn btn-light text-start rounded-0 w-100 p-3 border-top border-bottom border-1"
+          class="btn btn-light rounded-0 border-top border-bottom w-100 border-1 p-3 text-start"
           data-bs-toggle="collapse"
-          data-bs-target="#collapseTwo">
+          data-bs-target="#collapseTwo"
+        >
           Fresh Organic Salads
         </button>
         <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
-          <div class="p-3 m-0">
-            Celebrate freshness with our daily selections of organic salads prepared with farm-fresh
-            produce. Choose from Classic Caesar with house-made dressing, Garden Fresh with seasonal
-            vegetables, Mediterranean Greek with premium feta and olives, or Protein-Packed with
-            grilled chicken and quinoa.
+          <div class="m-0 p-3">
+            Celebrate freshness with our daily selections of organic salads prepared with farm-fresh produce. Choose
+            from Classic Caesar with house-made dressing, Garden Fresh with seasonal vegetables, Mediterranean Greek
+            with premium feta and olives, or Protein-Packed with grilled chicken and quinoa.
           </div>
         </div>
         <button
-          class="btn btn-light text-start rounded-0 w-100 p-3 border-top border-bottom border-1"
+          class="btn btn-light rounded-0 border-top border-bottom w-100 border-1 p-3 text-start"
           data-bs-toggle="collapse"
-          data-bs-target="#collapseThree">
+          data-bs-target="#collapseThree"
+        >
           Artisan Wood-Fired Pizzas
         </button>
         <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
-          <div class="p-3 m-0">
-            Experience authentic Italian traditions with our wood-fired pizzas made fresh daily. Try
-            our Classic Margherita with San Marzano tomatoes and fresh mozzarella, Spicy Pepperoni
-            with premium Italian meats, BBQ Chicken with caramelized onions and smoky sauce, or
-            Garden Veggie bursting with seasonal produce. Hot, cheesy, and wood-fired to perfection.
+          <div class="m-0 p-3">
+            Experience authentic Italian traditions with our wood-fired pizzas made fresh daily. Try our Classic
+            Margherita with San Marzano tomatoes and fresh mozzarella, Spicy Pepperoni with premium Italian meats, BBQ
+            Chicken with caramelized onions and smoky sauce, or Garden Veggie bursting with seasonal produce. Hot,
+            cheesy, and wood-fired to perfection.
           </div>
         </div>
       </div>
@@ -305,22 +281,13 @@
     <hr class="m-0 mb-3" />
 
     <section>
-      <h2 class="text-center bg-dark text-light p-4 m-0 fst-italic">
-        Nutrition Information & Dietary Details
-      </h2>
+      <h2 class="bg-dark text-light fst-italic m-0 p-4 text-center">Nutrition Information & Dietary Details</h2>
 
       <div class="p-3">
-        <h3>
-          Detailed Nutrition & Ingredients <span class="text-warning fw-bold">View Details</span>
-        </h3>
+        <h3>Detailed Nutrition & Ingredients <span class="text-warning fw-bold">View Details</span></h3>
 
-        <div class="d-flex gap-2 align-items-center">
-          <button
-            class="copyBtn btn btn-warning"
-            data-bs-toggle="modal"
-            data-bs-target="#copiedModal">
-            Copy
-          </button>
+        <div class="d-flex align-items-center gap-2">
+          <button class="copyBtn btn btn-warning" data-bs-toggle="modal" data-bs-target="#copiedModal">Copy</button>
           <small class="d-none badge rounded-pill bg-dark bg-opacity-75">Copied!</small>
         </div>
 
@@ -350,27 +317,21 @@
         <textarea
           placeholder="Enter dish name to view nutritional facts and allergen information"
           rows="5"
-          class="d-block mt-3 w-100"></textarea>
+          class="d-block mt-3 w-100"
+        ></textarea>
       </div>
     </section>
 
     <hr class="m-0 mb-3" />
 
     <section>
-      <h2 class="text-center bg-dark text-light p-4 m-0 fst-italic">Customer Reviews & Ratings</h2>
+      <h2 class="bg-dark text-light fst-italic m-0 p-4 text-center">Customer Reviews & Ratings</h2>
 
       <div class="p-3">
-        <h3>
-          Read What Our Customers Say <span class="text-warning fw-bold">See All Reviews</span>
-        </h3>
+        <h3>Read What Our Customers Say <span class="text-warning fw-bold">See All Reviews</span></h3>
 
-        <div class="d-flex gap-2 align-items-center">
-          <button
-            class="copyBtn btn btn-warning"
-            data-bs-toggle="modal"
-            data-bs-target="#copiedModal">
-            Copy
-          </button>
+        <div class="d-flex align-items-center gap-2">
+          <button class="copyBtn btn btn-warning" data-bs-toggle="modal" data-bs-target="#copiedModal">Copy</button>
           <small class="d-none badge rounded-pill bg-dark bg-opacity-75">Copied!</small>
         </div>
 
@@ -400,27 +361,21 @@
         <textarea
           placeholder="Share your feedback or read reviews from other FreshFlavor customers"
           rows="5"
-          class="d-block mt-3 w-100"></textarea>
+          class="d-block mt-3 w-100"
+        ></textarea>
       </div>
     </section>
 
     <hr class="m-0 mb-3" />
 
     <section>
-      <h2 class="text-center bg-dark text-light p-4 m-0 fst-italic">
-        Seasonal Specials & Limited Offers
-      </h2>
+      <h2 class="bg-dark text-light fst-italic m-0 p-4 text-center">Seasonal Specials & Limited Offers</h2>
 
       <div class="p-3">
         <h3>Exclusive Deals <span class="text-warning fw-bold">Check Availability</span></h3>
 
-        <div class="d-flex gap-2 align-items-center">
-          <button
-            class="copyBtn btn btn-warning"
-            data-bs-toggle="modal"
-            data-bs-target="#copiedModal">
-            Copy
-          </button>
+        <div class="d-flex align-items-center gap-2">
+          <button class="copyBtn btn btn-warning" data-bs-toggle="modal" data-bs-target="#copiedModal">Copy</button>
           <small class="d-none badge rounded-pill bg-dark bg-opacity-75">Copied!</small>
         </div>
 
@@ -450,7 +405,8 @@
         <textarea
           placeholder="Browse our limited-time seasonal offerings and special promotions"
           rows="5"
-          class="d-block mt-3 w-100"></textarea>
+          class="d-block mt-3 w-100"
+        ></textarea>
       </div>
     </section>
 
@@ -464,50 +420,48 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         height: 300px;
-      "></section>
+      "
+    ></section>
 
     <hr class="my-3" />
 
     <section>
-      <h2 class="text-center bg-dark text-light p-4 m-0 fst-italic">
-        Customer Favorites & Best Sellers
-      </h2>
+      <h2 class="bg-dark text-light fst-italic m-0 p-4 text-center">Customer Favorites & Best Sellers</h2>
 
-      <div class="container p-5 d-flex flex-column gap-4">
-        <div class="d-flex flex-wrap flex-md-nowrap justify-content-center gap-4">
-          <div class="card p-2 border-0 shadow col-10 col-md-4 col-lg-3 overflow-hidden card-hover">
+      <div class="d-flex flex-column container gap-4 p-5">
+        <div class="d-flex flex-md-nowrap justify-content-center flex-wrap gap-4">
+          <div class="card col-md-4 col-lg-3 card-hover col-10 overflow-hidden border-0 p-2 shadow">
             <img src="images/dish-1.jpg" class="card-img-top aspect-ratio-1 object-fit-cover" />
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Spicy Chicken Sandwich</h5>
               <p class="card-text">
-                Our signature crispy chicken, fresh lettuce, pickles, and spicy mayo on a toasted
-                brioche bun. A customer favorite!
+                Our signature crispy chicken, fresh lettuce, pickles, and spicy mayo on a toasted brioche bun. A
+                customer favorite!
               </p>
               <div class="d-flex justify-content-end align-items-end flex-grow-1">
                 <button class="btn btn-warning">Show</button>
               </div>
             </div>
           </div>
-          <div class="card p-2 border-0 shadow col-10 col-md-4 col-lg-3 overflow-hidden card-hover">
+          <div class="card col-md-4 col-lg-3 card-hover col-10 overflow-hidden border-0 p-2 shadow">
             <img src="images/dish-2.jpg" class="card-img-top aspect-ratio-1 object-fit-cover" />
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Mediterranean Quinoa Bowl</h5>
               <p class="card-text">
-                A healthy and delicious bowl with quinoa, fresh veggies, olives, feta, and a
-                lemon-herb vinaigrette.
+                A healthy and delicious bowl with quinoa, fresh veggies, olives, feta, and a lemon-herb vinaigrette.
               </p>
               <div class="d-flex justify-content-end align-items-end flex-grow-1">
                 <button class="btn btn-warning">Show</button>
               </div>
             </div>
           </div>
-          <div class="card p-2 border-0 shadow col-10 col-md-4 col-lg-3 overflow-hidden card-hover">
+          <div class="card col-md-4 col-lg-3 card-hover col-10 overflow-hidden border-0 p-2 shadow">
             <img src="images/dish-3.jpg" class="card-img-top aspect-ratio-1 object-fit-cover" />
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Classic Beef Burger</h5>
               <p class="card-text">
-                A juicy, all-beef patty with cheddar cheese, lettuce, tomato, and our signature
-                sauce on a sesame seed bun.
+                A juicy, all-beef patty with cheddar cheese, lettuce, tomato, and our signature sauce on a sesame seed
+                bun.
               </p>
               <div class="d-flex justify-content-end align-items-end flex-grow-1">
                 <button class="btn btn-warning">Show</button>
@@ -516,40 +470,38 @@
           </div>
         </div>
 
-        <div class="d-flex flex-wrap flex-md-nowrap justify-content-center gap-4">
-          <div class="card p-2 border-0 shadow col-10 col-md-4 col-lg-3 overflow-hidden card-hover">
+        <div class="d-flex flex-md-nowrap justify-content-center flex-wrap gap-4">
+          <div class="card col-md-4 col-lg-3 card-hover col-10 overflow-hidden border-0 p-2 shadow">
             <img src="images/dish-4.jpg" class="card-img-top aspect-ratio-1 object-fit-cover" />
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Margherita Pizza</h5>
               <p class="card-text">
-                A classic wood-fired pizza with fresh mozzarella, San Marzano tomatoes, and basil.
-                Simple and delicious.
+                A classic wood-fired pizza with fresh mozzarella, San Marzano tomatoes, and basil. Simple and delicious.
               </p>
               <div class="d-flex justify-content-end align-items-end flex-grow-1">
                 <button class="btn btn-warning">Show</button>
               </div>
             </div>
           </div>
-          <div class="card p-2 border-0 shadow col-10 col-md-4 col-lg-3 overflow-hidden card-hover">
+          <div class="card col-md-4 col-lg-3 card-hover col-10 overflow-hidden border-0 p-2 shadow">
             <img src="images/dish-5.jpg" class="card-img-top aspect-ratio-1 object-fit-cover" />
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Caesar Salad</h5>
               <p class="card-text">
-                Crisp romaine lettuce, parmesan cheese, and crunchy croutons in our classic Caesar
-                dressing. Add grilled chicken for a perfect meal.
+                Crisp romaine lettuce, parmesan cheese, and crunchy croutons in our classic Caesar dressing. Add grilled
+                chicken for a perfect meal.
               </p>
               <div class="d-flex justify-content-end align-items-end flex-grow-1">
                 <button class="btn btn-warning">Show</button>
               </div>
             </div>
           </div>
-          <div class="card p-2 border-0 shadow col-10 col-md-4 col-lg-3 overflow-hidden card-hover">
+          <div class="card col-md-4 col-lg-3 card-hover col-10 overflow-hidden border-0 p-2 shadow">
             <img src="images/dish-6.jpg" class="card-img-top aspect-ratio-1 object-fit-cover" />
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">BBQ Chicken Pizza</h5>
               <p class="card-text">
-                A smoky and savory pizza with tender BBQ chicken, red onions, cilantro, and a tangy
-                BBQ sauce base.
+                A smoky and savory pizza with tender BBQ chicken, red onions, cilantro, and a tangy BBQ sauce base.
               </p>
               <div class="d-flex justify-content-end align-items-end flex-grow-1">
                 <button class="btn btn-warning">Show</button>
@@ -558,27 +510,25 @@
           </div>
         </div>
 
-        <div class="d-flex flex-wrap flex-md-nowrap justify-content-center gap-4">
-          <div class="card p-2 border-0 shadow col-10 col-md-4 col-lg-3 overflow-hidden card-hover">
+        <div class="d-flex flex-md-nowrap justify-content-center flex-wrap gap-4">
+          <div class="card col-md-4 col-lg-3 card-hover col-10 overflow-hidden border-0 p-2 shadow">
             <img src="images/dish-7.jpg" class="card-img-top aspect-ratio-1 object-fit-cover" />
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Veggie Burger</h5>
               <p class="card-text">
-                A delicious and satisfying veggie patty with all the classic fixings. A great
-                vegetarian option.
+                A delicious and satisfying veggie patty with all the classic fixings. A great vegetarian option.
               </p>
               <div class="d-flex justify-content-end align-items-end flex-grow-1">
                 <button class="btn btn-warning">Show</button>
               </div>
             </div>
           </div>
-          <div class="card p-2 border-0 shadow col-10 col-md-4 col-lg-3 overflow-hidden card-hover">
+          <div class="card col-md-4 col-lg-3 card-hover col-10 overflow-hidden border-0 p-2 shadow">
             <img src="images/dish-8.jpg" class="card-img-top aspect-ratio-1 object-fit-cover" />
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Greek Salad</h5>
               <p class="card-text">
-                Crisp lettuce, cucumbers, tomatoes, red onions, olives, and feta cheese in a zesty
-                Greek dressing.
+                Crisp lettuce, cucumbers, tomatoes, red onions, olives, and feta cheese in a zesty Greek dressing.
               </p>
               <div class="d-flex justify-content-end align-items-end flex-grow-1">
                 <button class="btn btn-warning">Show</button>
@@ -597,60 +547,60 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         height: 300px;
-      "></section>
+      "
+    ></section>
 
     <hr class="my-3" />
 
     <section>
-      <h2 class="text-center bg-dark text-light p-4 m-0 fst-italic">Meet Our Master Chefs</h2>
+      <h2 class="bg-dark text-light fst-italic m-0 p-4 text-center">Meet Our Master Chefs</h2>
 
       <div class="container p-5">
-        <div
-          class="d-flex flex-wrap flex-md-nowrap justify-content-center justify-content-lg-evenly gap-5">
+        <div class="d-flex flex-md-nowrap justify-content-center justify-content-lg-evenly flex-wrap gap-5">
           <div
-            class="card rounded-5 col-10 col-md-4 col-lg-3 position-relative custom-card"
-            style="
-              background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0), url('images/thanks-1.jpg');
-            ">
+            class="card rounded-5 col-md-4 col-lg-3 position-relative custom-card col-10"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0), url('images/thanks-1.jpg')"
+          >
             <div class="card-body">
               <p class="text-light fw-medium fst-italic m-0">Master Chef & Culinary Director</p>
               <p class="text-light m-0">🕔 15+ Years Experience</p>
               <img
                 src="images/thanks-1.jpg"
-                class="img-thumbnail object-fit-cover rounded-pill w-50 mt-5 mb-3"
-                style="aspect-ratio: 3/4; max-width: 120px" />
+                class="img-thumbnail object-fit-cover rounded-pill mt-5 mb-3 w-50"
+                style="aspect-ratio: 3/4; max-width: 120px"
+              />
               <p class="text-light m-0">Chef Giovanni</p>
               <small class="text-light fst-italic">Head Chef & Founder</small>
             </div>
           </div>
           <div
-            class="card rounded-5 col-10 col-md-4 col-lg-3 position-relative custom-card"
-            style="
-              background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0), url('images/thanks-2.jpg');
-            ">
+            class="card rounded-5 col-md-4 col-lg-3 position-relative custom-card col-10"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0), url('images/thanks-2.jpg')"
+          >
             <div class="card-body">
               <p class="text-light fw-medium fst-italic m-0">Sous Chef</p>
               <p class="text-light m-0">🕔 8+ Years Experience</p>
               <img
                 src="images/thanks-2.jpg"
-                class="img-thumbnail object-fit-cover rounded-pill w-50 mt-5 mb-3"
-                style="aspect-ratio: 3/4; max-width: 120px" />
+                class="img-thumbnail object-fit-cover rounded-pill mt-5 mb-3 w-50"
+                style="aspect-ratio: 3/4; max-width: 120px"
+              />
               <p class="text-light m-0">Chef Liam Oliver</p>
               <small class="text-light fst-italic">Creative Cuisine Specialist</small>
             </div>
           </div>
           <div
-            class="card rounded-5 col-10 col-md-4 col-lg-3 position-relative custom-card"
-            style="
-              background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0), url('images/thanks-3.jpg');
-            ">
+            class="card rounded-5 col-md-4 col-lg-3 position-relative custom-card col-10"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0), url('images/thanks-3.jpg')"
+          >
             <div class="card-body">
               <p class="text-light fw-medium fst-italic m-0">Pastry Chef</p>
               <p class="text-light m-0">🕔 10+ Years Experience</p>
               <img
                 src="images/thanks-3.jpg"
-                class="img-thumbnail object-fit-cover rounded-pill w-50 mt-5 mb-3"
-                style="aspect-ratio: 3/4; max-width: 120px" />
+                class="img-thumbnail object-fit-cover rounded-pill mt-5 mb-3 w-50"
+                style="aspect-ratio: 3/4; max-width: 120px"
+              />
               <p class="text-light m-0">Chef David Lee</p>
               <small class="text-light fst-italic">Dessert Innovator</small>
             </div>
@@ -660,14 +610,11 @@
     </section>
 
     <section>
-      <h2 class="text-center g-light text-dark p-4 m-0 fst-italic">
-        FreshFlavor Stories & Updates
-      </h2>
+      <h2 class="g-light text-dark fst-italic m-0 p-4 text-center">FreshFlavor Stories & Updates</h2>
 
-      <div class="container p-5 d-flex flex-column gap-5">
-        <div
-          class="card border-0 shadow overflow-hidden d-flex flex-column-reverse flex-md-row justify-content-center">
-          <div class="card-body col-12 col-md-8">
+      <div class="d-flex flex-column container gap-5 p-5">
+        <div class="card d-flex flex-column-reverse flex-md-row justify-content-center overflow-hidden border-0 shadow">
+          <div class="card-body col-md-8 col-12">
             <h3 class="card-title text-warning fst-italic">Culinary Journeys: Behind the Scenes</h3>
             <small
               class="d-inline-block fw-bold mb-4"
@@ -680,10 +627,9 @@
               >Jan / 15th 2024</small
             >
             <p class="">
-              Discover the latest from FreshFlavor! We are constantly innovating, bringing you new
-              recipes, seasonal specials, and exciting events. Our passion for food drives us to
-              provide an exceptional culinary experience with every dish. Stay tuned for updates and
-              join our journey of taste and innovation.
+              Discover the latest from FreshFlavor! We are constantly innovating, bringing you new recipes, seasonal
+              specials, and exciting events. Our passion for food drives us to provide an exceptional culinary
+              experience with every dish. Stay tuned for updates and join our journey of taste and innovation.
             </p>
             <div class="d-flex flex-wrap gap-2">
               <button class="btn btn-warning">Learn More</button>
@@ -691,16 +637,18 @@
               <button class="btn btn-warning">Play Episode</button>
             </div>
           </div>
-          <div class="clip-slant-right col-12 col-md-4 position-relative overflow-hidden">
+          <div class="clip-slant-right col-md-4 position-relative col-12 overflow-hidden">
             <img
               src="images/special-1.jpg"
-              class="position-absolute top-0 start-0 h-100 w-100 object-fit-cover special-img" />
+              class="position-absolute object-fit-cover special-img start-0 top-0 h-100 w-100"
+            />
           </div>
         </div>
 
         <div
-          class="card border-0 shadow overflow-hidden d-flex flex-column-reverse flex-md-row-reverse justify-content-center">
-          <div class="card-body col-12 col-md-8">
+          class="card d-flex flex-column-reverse flex-md-row-reverse justify-content-center overflow-hidden border-0 shadow"
+        >
+          <div class="card-body col-md-8 col-12">
             <h3 class="card-title text-warning fst-italic">Sourcing Premium Ingredients</h3>
             <small
               class="d-inline-block fw-bold mb-4"
@@ -713,10 +661,9 @@
               >Nov / December 2024</small
             >
             <p class="">
-              At FreshFlavor, we are committed to using only the finest, freshest ingredients. We
-              partner with local farms and trusted suppliers to bring you dishes made with passion
-              and integrity. Learn about our commitment to quality and sustainable sourcing
-              practices.
+              At FreshFlavor, we are committed to using only the finest, freshest ingredients. We partner with local
+              farms and trusted suppliers to bring you dishes made with passion and integrity. Learn about our
+              commitment to quality and sustainable sourcing practices.
             </p>
             <div class="d-flex flex-wrap gap-2">
               <button class="btn btn-warning">Learn More</button>
@@ -724,16 +671,16 @@
               <button class="btn btn-warning">Play Episode</button>
             </div>
           </div>
-          <div class="clip-slant-left col-12 col-md-4 position-relative overflow-hidden">
+          <div class="clip-slant-left col-md-4 position-relative col-12 overflow-hidden">
             <img
               src="images/special-2.jpg"
-              class="position-absolute top-0 start-0 h-100 w-100 object-fit-cover special-img" />
+              class="position-absolute object-fit-cover special-img start-0 top-0 h-100 w-100"
+            />
           </div>
         </div>
 
-        <div
-          class="card border-0 shadow overflow-hidden d-flex flex-column-reverse flex-md-row justify-content-center">
-          <div class="card-body col-12 col-md-8">
+        <div class="card d-flex flex-column-reverse flex-md-row justify-content-center overflow-hidden border-0 shadow">
+          <div class="card-body col-md-8 col-12">
             <h3 class="card-title text-warning fst-italic">Seasonal Delights & New Flavors</h3>
             <small
               class="d-inline-block fw-bold mb-4"
@@ -746,10 +693,9 @@
               >Feb / 01st 2025</small
             >
             <p class="">
-              Explore our exquisite seasonal menu, crafted with the freshest ingredients of the
-              moment. From vibrant spring salads to hearty winter warmers, our chefs continuously
-              create new and exciting flavors to tantalize your taste buds. Don't miss our
-              limited-time offerings!
+              Explore our exquisite seasonal menu, crafted with the freshest ingredients of the moment. From vibrant
+              spring salads to hearty winter warmers, our chefs continuously create new and exciting flavors to
+              tantalize your taste buds. Don't miss our limited-time offerings!
             </p>
             <div class="d-flex flex-wrap gap-2">
               <button class="btn btn-warning">Learn More</button>
@@ -757,16 +703,18 @@
               <button class="btn btn-warning">Play Episode</button>
             </div>
           </div>
-          <div class="clip-slant-right col-12 col-md-4 position-relative overflow-hidden">
+          <div class="clip-slant-right col-md-4 position-relative col-12 overflow-hidden">
             <img
               src="images/special-3.jpg"
-              class="position-absolute top-0 start-0 h-100 w-100 object-fit-cover special-img" />
+              class="position-absolute object-fit-cover special-img start-0 top-0 h-100 w-100"
+            />
           </div>
         </div>
 
         <div
-          class="card border-0 shadow overflow-hidden d-flex flex-column-reverse flex-md-row-reverse justify-content-center">
-          <div class="card-body col-12 col-md-8">
+          class="card d-flex flex-column-reverse flex-md-row-reverse justify-content-center overflow-hidden border-0 shadow"
+        >
+          <div class="card-body col-md-8 col-12">
             <h3 class="card-title text-warning fst-italic">FreshFlavor Community Highlights</h3>
             <small
               class="d-inline-block fw-bold mb-4"
@@ -779,10 +727,9 @@
               >Mar / 10th 2025</small
             >
             <p class="">
-              Join the FreshFlavor community! We love to share stories, behind-the-scenes glimpses,
-              and engage with our amazing customers. Follow our news section, social media, and
-              subscribe to our newsletter to stay connected and never miss out on our exciting
-              updates and special offers.
+              Join the FreshFlavor community! We love to share stories, behind-the-scenes glimpses, and engage with our
+              amazing customers. Follow our news section, social media, and subscribe to our newsletter to stay
+              connected and never miss out on our exciting updates and special offers.
             </p>
             <div class="d-flex flex-wrap gap-2">
               <button class="btn btn-warning">Learn More</button>
@@ -790,10 +737,11 @@
               <button class="btn btn-warning">Play Episode</button>
             </div>
           </div>
-          <div class="clip-slant-left col-12 col-md-4 position-relative overflow-hidden">
+          <div class="clip-slant-left col-md-4 position-relative col-12 overflow-hidden">
             <img
               src="images/special-4.jpg"
-              class="position-absolute top-0 start-0 h-100 w-100 object-fit-cover special-img" />
+              class="position-absolute object-fit-cover special-img start-0 top-0 h-100 w-100"
+            />
           </div>
         </div>
       </div>
@@ -801,45 +749,38 @@
 
     <section>
       <div
-        class="container p-5 d-flex justify-content-center justify-content-lg-evenly align-items-center flex-wrap gap-5">
+        class="d-flex justify-content-center justify-content-lg-evenly align-items-center container flex-wrap gap-5 p-5"
+      >
         <div
-          class="d-flex flex-column justify-content-center align-items-center gap-3 border border-dark border-1 shadow p-3 rounded-3 social-card">
+          class="d-flex flex-column justify-content-center align-items-center border-dark rounded-3 social-card gap-3 border border-1 p-3 shadow"
+        >
           <h5 class="fst-italic m-0">Subscribe Now</h5>
-          <img
-            src="images/3d-whatsapp.png"
-            width="80"
-            height="80"
-            class="position-absolute z-n1 blur" />
+          <img src="images/3d-whatsapp.png" width="80" height="80" class="position-absolute z-n1 blur" />
           <img src="images/3d-whatsapp.png" width="80" height="80" />
           <a href="#" style="text-decoration-thickness: 1.5px">Go To Link</a>
         </div>
 
         <div
-          class="d-flex flex-column justify-content-center align-items-center gap-3 border border-dark border-1 shadow p-3 rounded-3 social-card">
+          class="d-flex flex-column justify-content-center align-items-center border-dark rounded-3 social-card gap-3 border border-1 p-3 shadow"
+        >
           <h5 class="fst-italic m-0">Subscribe Now</h5>
-          <img
-            src="images/3d-insta.png"
-            width="80"
-            height="80"
-            class="position-absolute z-n1 blur" />
+          <img src="images/3d-insta.png" width="80" height="80" class="position-absolute z-n1 blur" />
           <img src="images/3d-insta.png" width="80" height="80" />
           <a href="#" style="text-decoration-thickness: 1.5px">Go To Link</a>
         </div>
 
         <div
-          class="d-flex flex-column justify-content-center align-items-center gap-3 border border-dark border-1 shadow p-3 rounded-3 social-card">
+          class="d-flex flex-column justify-content-center align-items-center border-dark rounded-3 social-card gap-3 border border-1 p-3 shadow"
+        >
           <h5 class="fst-italic m-0">Subscribe Now</h5>
-          <img
-            src="images/3d-linkedin.png"
-            width="80"
-            height="80"
-            class="position-absolute z-n1 blur" />
+          <img src="images/3d-linkedin.png" width="80" height="80" class="position-absolute z-n1 blur" />
           <img src="images/3d-linkedin.png" width="80" height="80" />
           <a href="#" style="text-decoration-thickness: 1.5px">Go To Link</a>
         </div>
 
         <div
-          class="d-flex flex-column justify-content-center align-items-center gap-3 border border-dark border-1 shadow p-3 rounded-3 social-card">
+          class="d-flex flex-column justify-content-center align-items-center border-dark rounded-3 social-card gap-3 border border-1 p-3 shadow"
+        >
           <h5 class="fst-italic m-0">Subscribe Now</h5>
           <img src="images/3d-x.png" width="80" height="80" class="position-absolute z-n1 blur" />
           <img src="images/3d-x.png" width="80" height="80" />
@@ -848,32 +789,32 @@
       </div>
     </section>
 
-    <footer class="bg-dark text-light py-3 mt-5">
+    <footer class="bg-dark text-light mt-5 py-3">
       <hr class="border-light m-0 mb-3" />
       <div class="container p-3 px-5">
         <div class="row g-0">
-          <div class="d-flex flex-column justify-content-center align-items-center col-12 col-md-4">
+          <div class="d-flex flex-column justify-content-center align-items-center col-md-4 col-12">
             <img src="images/logo.png" width="100" height="100" />
             <h5 class="fst-italic my-3">Our Location</h5>
-            <hr class="border-light m-0 mb-3 d-none d-md-block w-100" />
+            <hr class="border-light d-none d-md-block m-0 mb-3 w-100" />
             <p class="mb-2 opacity-75">Phone: (000) 000-0000</p>
             <p class="mb-2 opacity-75">Address: Egypt</p>
             <p class="m-0 opacity-75">Email: info@freshflavor.com</p>
           </div>
-          <hr class="border-light my-3 d-block d-md-none" />
-          <div class="d-flex flex-column justify-content-center align-items-center col-12 col-md-4">
+          <hr class="border-light d-block d-md-none my-3" />
+          <div class="d-flex flex-column justify-content-center align-items-center col-md-4 col-12">
             <img src="images/logo.png" width="100" height="100" />
             <h5 class="fst-italic my-3">Quick Links</h5>
-            <hr class="border-light m-0 mb-3 d-none d-md-block w-100" />
+            <hr class="border-light d-none d-md-block m-0 mb-3 w-100" />
             <p class="mb-2 opacity-75">Full Menu</p>
             <p class="mb-2 opacity-75">Catering Services</p>
             <p class="m-0 opacity-75">Make a Reservation</p>
           </div>
-          <hr class="border-light my-3 d-block d-md-none" />
-          <div class="d-flex flex-column justify-content-center align-items-center col-12 col-md-4">
+          <hr class="border-light d-block d-md-none my-3" />
+          <div class="d-flex flex-column justify-content-center align-items-center col-md-4 col-12">
             <img src="images/logo.png" width="100" height="100" />
             <h5 class="fst-italic my-3">Our Promise</h5>
-            <hr class="border-light m-0 mb-3 d-none d-md-block w-100" />
+            <hr class="border-light d-none d-md-block m-0 mb-3 w-100" />
             <p class="mb-2 opacity-75">Fresh Ingredients Always</p>
             <p class="mb-2 opacity-75">Exceptional Taste & Quality</p>
             <p class="m-0 opacity-75">Customer Satisfaction</p>
@@ -881,7 +822,7 @@
         </div>
       </div>
       <hr class="border-light my-3" />
-      <p class="text-center text-light text-opacity-50 m-0">
+      <p class="text-light text-opacity-50 m-0 text-center">
         &copy; 2025 FreshFlavor. All Rights Reserved. Designed by Eng. Ziad Aboughaleb.
       </p>
     </footer>
@@ -890,7 +831,8 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
 
     <script src="src/script.js"></script>
   </body>
